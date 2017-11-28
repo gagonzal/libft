@@ -6,7 +6,7 @@
 /*   By: gagonzal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/14 13:18:11 by gagonzal          #+#    #+#             */
-/*   Updated: 2017/11/21 22:29:31 by gagonzal         ###   ########.fr       */
+/*   Updated: 2017/11/28 18:05:14 by gagonzal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,9 +27,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }
-/*
-int	main(void)
-{
-	printf ("%d\n", strncmp("q", "a", 0));
-	printf ("%d\n", ft_strncmp("q", "a", 0));
-}*/

@@ -6,7 +6,7 @@
 /*   By: gagonzal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/16 15:25:52 by gagonzal          #+#    #+#             */
-/*   Updated: 2017/11/28 16:24:31 by gagonzal         ###   ########.fr       */
+/*   Updated: 2017/11/28 18:02:28 by gagonzal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,6 @@ static int	ft_nb_word(const char *s)
 		while (s[i] && !(is_separate(s[i])))
 			i++;
 	}
-//	printf ("nb_word == %d\n", ret);
 	return (ret);
 }
 
@@ -64,7 +63,6 @@ static int	ft_sizestring(const char *s)
 			i++;
 		}
 	}
-//	printf("sizestring is = %d\n", ret);
 	return (ret);
 }
 
@@ -94,36 +92,3 @@ char		*ft_strtrim(char const *s)
 	((char*)str)[j] = '\0';
 	return (char*)(str);
 }
-/*
-int	main(int ac, char **av)
-{
-	char	str[] = "  \t   \t\nBon\t \njour\t\n \n   ";
-	char	str2[] = "bonjour";
-	char	str3[] = " \t\t\t  ";
-	char	*r;
-
-	ft_strtrim(NULL);
-	r = ft_strtrim(str);
-	if (strcmp(r, "bon\t \njour"))
-	{
-		printf("kotest1\n");
-		printf("%s\n", r);
-		free(r);
-	}
-	
-	r = ft_strtrim(str2);
-	if (strcmp(r, "bonjour"))
-	{
-		printf ("kotest2\n");
-		free(r);
-	}
-	r = ft_strtrim(str3);
-	if (strcmp(r, "  ") || str3 == r)
-	{
-		printf("kotest3");
-		free(r);
-	}
-	
-	return (0);
-}
-*/

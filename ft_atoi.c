@@ -6,19 +6,18 @@
 /*   By: gagonzal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/14 15:08:13 by gagonzal          #+#    #+#             */
-/*   Updated: 2017/11/28 17:40:18 by gagonzal         ###   ########.fr       */
+/*   Updated: 2017/11/28 19:18:26 by gagonzal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 #include <inttypes.h>
 
 int	ft_atoi(const char *str)
 {
-	int i;
-	int neg;
-	int64_t result;
+	int		i;
+	int		neg;
+	int64_t	result;
 
 	i = 0;
 	result = 0;
@@ -33,9 +32,9 @@ int	ft_atoi(const char *str)
 	}
 	while (str[i] >= '0' && str[i] <= '9')
 	{
-		if (((INT64_MAX / 10 )- (str[i] - 48 )) < result)//TO_DO
+		if (((INT64_MAX / 10) - (str[i] - 48)) < result)
 		{
-			return ((neg > 0 ) ? -1 : 0);//TO_DO
+			return ((neg > 0) ? -1 : 0);
 		}
 		result = result * 10 + (str[i] - 48);
 		i++;

@@ -6,7 +6,7 @@
 /*   By: gagonzal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/13 16:32:14 by gagonzal          #+#    #+#             */
-/*   Updated: 2017/11/28 17:50:46 by gagonzal         ###   ########.fr       */
+/*   Updated: 2017/11/28 19:56:15 by gagonzal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,8 @@ static int	nb_words(const char *str, char c)
 	}
 	return (ret);
 }
-char	**get_tab(char **tab, const char *s, char c)
+
+static char	**get_tab(char **tab, const char *s, char c)
 {
 	int i;
 	int j;
@@ -69,6 +70,7 @@ char	**get_tab(char **tab, const char *s, char c)
 	tab[j] = NULL;
 	return (tab);
 }
+
 char		**ft_strsplit(const char *s, char c)
 {
 	char	**tab;

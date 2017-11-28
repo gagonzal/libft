@@ -6,13 +6,13 @@
 /*   By: gagonzal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/17 16:13:41 by gagonzal          #+#    #+#             */
-/*   Updated: 2017/11/28 17:29:53 by gagonzal         ###   ########.fr       */
+/*   Updated: 2017/11/28 18:14:46 by gagonzal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_lstadd(t_list **alst, t_list *new)
+void	ft_lstadd(t_list **alst, t_list *new)
 {
 	if (!new)
 		return ;

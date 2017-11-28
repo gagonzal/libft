@@ -6,7 +6,7 @@
 /*   By: gagonzal <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/13 15:02:58 by gagonzal          #+#    #+#             */
-/*   Updated: 2017/11/28 17:40:50 by gagonzal         ###   ########.fr       */
+/*   Updated: 2017/11/28 19:19:37 by gagonzal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	*ft_memalloc(size_t size)
 
 	ptr = NULL;
 	if (size > 0)
-	{	
+	{
 		if (!(ptr = (void*)malloc(sizeof(void) * size)))
 			return (NULL);
 		ft_memset(ptr, 0, size);
